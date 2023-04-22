@@ -49,7 +49,7 @@ public class ExcelController {
         AtomicInteger countTotal = new AtomicInteger(1);
 
         for (ExcelDataResult all : alls) {
-            AtomicInteger count = new AtomicInteger(1);
+            AtomicInteger count = new AtomicInteger(0);
             Map<Integer, String> tableHead = new HashMap<>();
             tableHead = all.getDatas().get(0);
 
@@ -106,7 +106,7 @@ public class ExcelController {
             countTotal.incrementAndGet();
         }
 
-        FileZipUtil.exportZip(response, excelSavePath, "过磅明细管理", ".zip");
+        FileZipUtil.exportZip(response, excelSavePath, "demo", ".zip");
         File file1 = new File(excelSavePath);
         File[] files = file1.listFiles();
         for (File file2 : files) {
