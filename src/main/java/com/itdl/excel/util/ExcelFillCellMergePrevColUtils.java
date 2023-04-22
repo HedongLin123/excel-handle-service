@@ -15,7 +15,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 列合并工具类
+ * @Description 列合并工具类
+ * @Author IT动力
+ * @Date 2023/04/20 11:39
  */
 public class ExcelFillCellMergePrevColUtils implements CellWriteHandler {
     private static final String KEY ="%s-%s";

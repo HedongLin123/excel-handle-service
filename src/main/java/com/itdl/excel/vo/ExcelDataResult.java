@@ -7,16 +7,19 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description
+ * @Description 读物Excel结果数据
  * @Author IT动力
  * @Date 2023/04/20 15:18
  */
 public class ExcelDataResult implements Serializable {
 
+    // 标题数据
     private Map head = new HashMap();
 
+    // 内容数据
     private List<Map<Integer, String>> datas = new ArrayList<>();
 
+    // sheet名称
     private String sheetName;
 
     public ExcelDataResult(String sheetName, Map head, List<Map<Integer, String>> datas) {

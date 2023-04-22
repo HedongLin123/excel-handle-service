@@ -9,10 +9,10 @@ import org.apache.poi.ss.usermodel.Sheet;
 
 import java.util.List;
 
-/**
- * 自定义设置列宽
- *
- * @date 01/22/2021 14:53
+ /**
+ * @Description 自定义设置列宽
+ * @Author IT动力
+ * @Date 2023/04/20 11:39
  */
 public class ExcelWidthStyleStrategy extends AbstractColumnWidthStyleStrategy {
 

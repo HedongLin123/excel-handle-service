@@ -11,9 +11,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-
 /**
- * 文件打包下载工具类
+ * @Description 文件打包下载工具类
+ * @Author IT动力
+ * @Date 2023/04/20 11:39
  */
 public class FileZipUtil {
 

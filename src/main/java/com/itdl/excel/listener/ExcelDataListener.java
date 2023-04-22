@@ -8,6 +8,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @Description 数据监听
+ * @Author IT动力
+ * @Date 2023/04/20 11:39
+ */
 public class ExcelDataListener<T> extends AnalysisEventListener<T> {
 
     // 数据列表
