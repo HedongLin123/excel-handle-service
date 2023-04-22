@@ -4,8 +4,8 @@ import com.alibaba.excel.write.style.row.AbstractRowHeightStyleStrategy;
 import org.apache.poi.ss.usermodel.Row;
 
 /**
- * @Description
- * @Author donglin.he
+ * @Description 自定义设置行高
+ * @Author IT动力
  * @Date 2023/04/20 16:34
  */
 public class ExcelRowHeightStyleStrategy extends AbstractRowHeightStyleStrategy {
@@ -32,8 +32,10 @@ public class ExcelRowHeightStyleStrategy extends AbstractRowHeightStyleStrategy 
         // second row set header style
         final int rowNum = row.getRowNum();
         if (rowNum == 1){
+            // 如果是第二行，也就是行号为1时，使用传入的第二行行高
             row.setHeightInPoints((float) secondHeight);
         }else {
+            // 设置第二行到第n行的内容行高
             row.setHeightInPoints((float) contentHeight);
         }
     }

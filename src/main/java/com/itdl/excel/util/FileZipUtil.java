@@ -12,6 +12,9 @@ import java.util.Date;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
+/**
+ * 文件打包下载工具类
+ */
 public class FileZipUtil {
 
     /**

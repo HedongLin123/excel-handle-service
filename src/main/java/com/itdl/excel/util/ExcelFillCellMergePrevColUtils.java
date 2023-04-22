@@ -14,29 +14,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-//列合并工具类
+/**
+ * 列合并工具类
+ */
 public class ExcelFillCellMergePrevColUtils implements CellWriteHandler {
     private static final String KEY ="%s-%s";
     //所有的合并信息都存在了这个map里面
     Map<String, Integer> mergeInfo = new HashMap<>();
- 
-    public ExcelFillCellMergePrevColUtils() {
-    }
-
-
-    @Override
-    public void beforeCellCreate(WriteSheetHolder writeSheetHolder, WriteTableHolder writeTableHolder, Row row, Head head, Integer columnIndex, Integer relativeRowIndex, Boolean isHead) {
-    }
-
-
-    @Override
-    public void afterCellCreate(WriteSheetHolder writeSheetHolder, WriteTableHolder writeTableHolder, Cell cell, Head head, Integer relativeRowIndex, Boolean isHead) {
-    }
-
-
-    @Override
-    public void afterCellDataConverted(WriteSheetHolder writeSheetHolder, WriteTableHolder writeTableHolder, WriteCellData<?> cellData, Cell cell, Head head, Integer relativeRowIndex, Boolean isHead) {
-    }
 
     @Override
     public void afterCellDispose(WriteSheetHolder writeSheetHolder, WriteTableHolder writeTableHolder, List<WriteCellData<?>> cellDataList, Cell cell, Head head, Integer relativeRowIndex, Boolean isHead) {

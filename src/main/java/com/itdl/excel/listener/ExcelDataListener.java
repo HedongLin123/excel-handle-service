@@ -10,7 +10,9 @@ import java.util.Map;
 
 public class ExcelDataListener<T> extends AnalysisEventListener<T> {
 
+    // 数据列表
     private List<T> dataList = new ArrayList<>();
+    // 标题列表
     private Map headMap = new HashMap();
 
 

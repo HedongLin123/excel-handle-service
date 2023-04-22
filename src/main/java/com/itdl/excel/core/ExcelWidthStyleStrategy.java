@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import java.util.List;
 
 /**
- * 自动设置列宽
+ * 自定义设置列宽
  *
  * @date 01/22/2021 14:53
  */
@@ -21,7 +21,7 @@ public class ExcelWidthStyleStrategy extends AbstractColumnWidthStyleStrategy {
 
     @Override
     protected void setColumnWidth(WriteSheetHolder writeSheetHolder, List<WriteCellData<?>> cellDataList, Cell cell, Head head, Integer relativeRowIndex, Boolean isHead) {
-        // 简单设置
+        // 简单设置，首先判断是否存在列，存在则设置特定列的宽度
         Sheet sheet = writeSheetHolder.getSheet();
         if (cell.getColumnIndex() == 1){
             sheet.setColumnWidth(cell.getColumnIndex(), 14 * 256);
