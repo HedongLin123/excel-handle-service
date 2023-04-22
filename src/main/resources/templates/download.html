@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>File Upload & Download</title>
+    <!-- CSS only -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+    <title>Index</title>
+</head>
+<body style="background-color: #f0f4c3">
+<div class="container text-center">
+    <div>
+        <h1>明细表拆分</h1>
+    </div>
+    <div class="card" style="width: 18rem;" align="center">
+        <div class="card-body" align="center">
+            <h2 class="card-title">明细文件(Excel)</h2>
+            <div class="mb-3">
+                <form action="/parseExcel" method="post" enctype="multipart/form-data">
+                    <input
+                            class="form-control" name="file" type="file" id="formFile"><br />
+                    <input type="submit" value="转换" class="btn btn-warning">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
